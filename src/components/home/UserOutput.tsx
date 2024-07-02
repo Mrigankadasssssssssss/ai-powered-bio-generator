@@ -19,7 +19,7 @@ const UserOutput = () => {
       <Skeleton className="w-full h-full"/> 
       :
       <ul className="flex flex-col p-8 pt-12 xs:p-12 lg:p-16 items-start justify-start space-y-8 sm:space-y-12">
-        {output?.data.map((data,index)=>{
+        {output.data && output?.data.map((data,index)=>{
           return (
             <li key={index} className="w-full text-sm xs:text-base border border-primary/20 rounded-md p-4 relative bg-background rounded-br-none">
               {data.bio}
